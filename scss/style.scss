@@ -1,0 +1,394 @@
+@import '_global';
+
+.header__menu-list{
+    display: flex;
+    justify-content: space-between;
+    width: 645px;
+    margin: 0 auto;
+    li{
+       padding: 40px 0 30px;
+       font-weight: 700;
+       font-size: 14px;
+       border-bottom: 4px solid transparent;
+       transition: all .5s;
+       a{
+           color: #4E5665;
+       }
+       &:hover{
+            border-bottom: 4px solid #8C001A;
+            transition: all .5s;
+        } 
+    }
+}
+.header__menu-btn{
+    width: 30px;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 20px;
+    display: none;
+}
+.header__menu-row{
+    width: 100%;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #4E5665;
+}
+.header__top{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 40px 50px;
+    &-inner{
+        border: 2px solid #8C001A;
+        border-bottom: none;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .container{
+        min-width: 1000px;
+    }
+    &-title{
+        font-family: Georgia;
+        max-width: 408px;
+        font-weight: bold;
+        font-size: 162px;
+        line-height: 176px;
+        text-transform: uppercase;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);        
+    }
+    &-text{
+        font-family: Georgia;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 27px;
+        text-align: center;
+        text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        margin-bottom: -12px;
+    }
+    &-text::before,
+    &-text::after{
+        content:"";
+        border-top: 2px solid #8C001A;
+        width: 100%;
+    }
+    &-text::before{
+        margin-right: 30px;
+    }
+    &-text::after{
+        margin-left: 30px;
+    }
+}
+//end header
+//start love
+.love__item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.love__item-title{
+    font-family: Georgia;
+    font-weight: 400;
+    width: 345px;
+    font-size: 32px;
+    line-height: 38px;
+}
+.love__item-text{
+    width: 540px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #505050;
+}
+.love__icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 145px;
+    &-number{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+        color: #4E5665;
+        text-align: center;
+        margin-top: 32px;
+    }
+    &-text{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #909090;
+        text-align: center;
+    }
+}
+//end love
+//start photo
+.photo{
+    padding-top: 152px;
+}
+.photo__item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.photo__img{
+    max-width: 540px;
+    width: 100%;
+    height: 430px;
+    background-image: url(../img/Photo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.photo__box{
+    margin: auto;
+}
+.photo__box-title{
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 25px;
+    color: #8C001A;
+    margin-bottom: 28px;
+}
+.photo__box-text{
+    max-width: 390px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #505050;
+}
+.text__right,
+.title__right{
+    text-align: right;
+    max-width: 340px;
+    width: 100%;
+}
+//end photo
+//start bottle
+.bottle__title{
+    font-family: Georgia;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 38px;
+    font-size: 32px;
+    padding-bottom: 63px;
+}
+.bottle__img{
+    position: relative;
+    max-width: 296px;
+    margin: 0 auto;
+}
+.dot1{
+    position: absolute;
+    left: 137px;
+    top: 471px;
+}
+.dot1:hover .dot1__line,
+.dot2:hover .dot2__line,
+.dot3:hover .dot3__line{
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s;
+}
+
+.dot2{
+    position: absolute;
+    bottom: 260px;
+    right: 57px;
+}
+.dot3{
+    position: absolute;
+    bottom: 96px;
+    left: 57px;
+}
+.dot1__line{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 22px;
+    top: -149px;
+    transition: all .7s;
+    &-text{
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 28px;
+        font-style: normal;
+        text-align: right;
+        margin-bottom: 8px;
+        margin-right: 22px;
+    }
+}
+    .dot2__line{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 22px;
+        top: -149px;
+        transition: all .7s;
+        &-text{
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 28px;
+            font-style: normal;
+            text-align: right;
+            margin-bottom: 8px;
+            margin-right: 22px;
+        }
+    }
+.dot3__line{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 22px;
+        top: -136px;
+        transition: all .7s;
+        &-text{
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 28px;
+            font-style: normal;
+            text-align: right;
+            margin-bottom: 8px;
+            margin-right: 22px;
+        }
+    }
+//end bottle
+
+//start slider
+.slider__item{
+    margin: 107px 30px 100px 30px;
+}
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next{
+    font-size: 0;
+    background-image: url(../img/slider/Arrow-left.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-20px);
+  }
+.slick-arrow.slick-prev{
+    background-image: url(../img/slider/Arrow-left.png);
+    left: 50%;
+    margin-left: -340px;
+}
+.slick-arrow.slick-next{
+    background-image: url(../img/slider/Arrow-right.png);
+    right: 50%;
+    margin-right: -340px;
+  }
+
+//end slider
+//start footer
+footer{
+    background-color: #8A011A;
+    padding: 50px 0 80px;
+}
+.footer__items{
+    display: flex;
+}
+.footer__item{
+    margin-left: 90px;
+    &-title{
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        font-style: normal;
+        margin-bottom: 17px;
+    }
+    ul{
+        li{
+            margin-bottom: 6px;
+          a{
+            font-family: 'Lato', sans-serif;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            font-style: normal;
+            color: #fff ;
+            }   
+        }
+        
+    }
+}
+.connect{
+    li{
+        padding-left: 28px;
+        position: relative;
+    }
+}
+.contact::before{
+    content: '';
+    background-image: url(../img/footer/contact.svg);
+    width: 17px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.facebook::before{
+    content: '';
+    background-image: url(../img/footer/facebook.svg);
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.instagram::before{
+    content: '';
+    background-image: url(../img/footer/instagram.svg);
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.youtube::before{
+    content: '';
+    background-image: url(../img/footer/youtube.svg);
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.email::before{
+    content: '';
+    background-image: url(../img/footer/email.svg);
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+//end footer
+@import '_media';
